@@ -61,3 +61,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+// Courses Page
+const filterBtns = document.querySelectorAll('.filter-btn');
+const courseCards = document.querySelectorAll('.course-card');
+const noResults = document.getElementById('noResults');
+
+if (filterBtns.length > 0) {
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+      let visibleCount = 0;
+
+      courseCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      noResults.classList.toggle('d-none', visibleCount > 0);
+    });
+  });
+}
+// GALLERY LIGHTBOX 
+const galleryImages = document.querySelectorAll('.gallery-img');
+const lightboxImage = document.getElementById('lightboxImage');
+
+if (galleryImages.length > 0) {
+  galleryImages.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      const modal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+      modal.show();
+    });
+  });
+}
