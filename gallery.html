@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EduLearn - Gallery</title>
+  <meta name="description" content="See EduLearn students and instructors in action across our campuses and online sessions." />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,7 +12,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="gallery.html">Edu<span>Learn</span></a>
+      <a class="navbar-brand" href="index.html">Edu<span>Learn</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,29 +35,40 @@
 
   <div class="page-header">
     <div class="container">
-      <h1>Gallery</h1>
-      <p>Explore our photo gallery</p>
+      <h1>Student Gallery</h1>
+      <p>Moments from our classrooms, workshops, and graduation days</p>
     </div>
   </div>
 
   <section class="py-5">
     <div class="container">
-      <p class="text-muted text-center">Gallery listings coming soon - check back by Milestone 2.</p>
+      <div class="row g-3" id="galleryGrid">
+
+        <div class="col-md-4 col-6">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop" class="img-fluid rounded-3 gallery-img" alt="Students collaborating on a laptop during a coding workshop" />
+        </div>
+        <div class="col-md-4 col-6">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop" class="img-fluid rounded-3 gallery-img" alt="Instructor teaching a class of students at EduLearn" />
+        </div>
+        <div class="col-md-4 col-6">
+          <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&h=300&fit=crop" class="img-fluid rounded-3 gallery-img" alt="Graduation ceremony for EduLearn online course completers" />
+        </div>
+        <div class="col-md-4 col-6">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop" class="img-fluid rounded-3 gallery-img" alt="Group of students studying together in a library" />
+        </div>
+        <div class="col-md-4 col-6">
+          <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=400&h=300&fit=crop" class="img-fluid rounded-3 gallery-img" alt="Student presenting a project to classmates" />
+        </div>
+        <div class="col-md-4 col-6">
+          <img src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?w=400&h=300&fit=crop" class="img-fluid rounded-3 gallery-img" alt="Online learning session shown on a laptop screen" />
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4"><h5>EduLearn</h5><p>Empowering students across Africa.</p></div>
-        <div class="col-md-4 mb-4"><h5>Quick Links</h5><a href="index.html">Home</a><a href="courses.html">Courses</a></div>
-        <div class="col-md-4 mb-4"><h5>Contact</h5><p>Email: info@edulearn.co.ke</p></div>
-      </div>
-      <div class="footer-bottom"><p>&copy; 2026 EduLearn. All rights reserved.</p></div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+  <!-- LIGHTBOX MODAL -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-transparent border-0">
+        <button
