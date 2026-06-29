@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EduLearn - Courses</title>
+  <meta name="description" content="Browse EduLearn's full catalogue of online courses in technology, business, and data science." />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,7 +12,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="courses.html">Edu<span>Learn</span></a>
+      <a class="navbar-brand" href="index.html">Edu<span>Learn</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,24 +36,132 @@
   <div class="page-header">
     <div class="container">
       <h1>Our Courses</h1>
-      <p>Browse all available courses</p>
+      <p>Browse our full catalogue and find the right course for you</p>
     </div>
   </div>
 
   <section class="py-5">
     <div class="container">
-      <p class="text-muted text-center">Full course listings coming soon - check back by Milestone 2.</p>
+
+      <!-- FILTER BUTTONS -->
+      <div class="text-center mb-5">
+        <button class="btn btn-outline-primary m-1 filter-btn active" data-filter="all">All Courses</button>
+        <button class="btn btn-outline-primary m-1 filter-btn" data-filter="technology">Technology</button>
+        <button class="btn btn-outline-primary m-1 filter-btn" data-filter="business">Business</button>
+        <button class="btn btn-outline-primary m-1 filter-btn" data-filter="data">Data Science</button>
+      </div>
+
+      <div class="row g-4" id="courseGrid">
+
+        <div class="col-md-4 course-card" data-category="technology">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=400&h=200&fit=crop" class="card-img-top" alt="Full-Stack Web Development course thumbnail" />
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">Technology</span>
+              <h5 class="card-title">Full-Stack Web Development</h5>
+              <p class="card-text text-muted">Master HTML, CSS, JavaScript, and Node.js to build complete, modern web applications from scratch.</p>
+              <p class="small text-muted mb-1">Duration: 12 weeks | Level: Beginner</p>
+              <p class="fw-bold" style="color: var(--primary);">KES 15,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 course-card" data-category="data">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" class="card-img-top" alt="Data Science and Machine Learning course thumbnail" />
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Data Science</span>
+              <h5 class="card-title">Data Science & Machine Learning</h5>
+              <p class="card-text text-muted">Learn Python, pandas, and core ML algorithms through hands-on projects with real datasets.</p>
+              <p class="small text-muted mb-1">Duration: 16 weeks | Level: Intermediate</p>
+              <p class="fw-bold" style="color: var(--primary);">KES 20,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 course-card" data-category="business">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&h=200&fit=crop" class="card-img-top" alt="Digital Marketing Essentials course thumbnail" />
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Business</span>
+              <h5 class="card-title">Digital Marketing Essentials</h5>
+              <p class="card-text text-muted">Grow any business online with SEO, social media strategy, and content marketing fundamentals.</p>
+              <p class="small text-muted mb-1">Duration: 8 weeks | Level: Beginner</p>
+              <p class="fw-bold" style="color: var(--primary);">KES 10,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 course-card" data-category="technology">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop" class="card-img-top" alt="Mobile App Development course thumbnail" />
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">Technology</span>
+              <h5 class="card-title">Mobile App Development with Flutter</h5>
+              <p class="card-text text-muted">Build cross-platform iOS and Android apps using Dart and Flutter, from UI to deployment.</p>
+              <p class="small text-muted mb-1">Duration: 10 weeks | Level: Intermediate</p>
+              <p class="fw-bold" style="color: var(--primary);">KES 18,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 course-card" data-category="business">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=200&fit=crop" class="card-img-top" alt="Project Management course thumbnail" />
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Business</span>
+              <h5 class="card-title">Project Management Fundamentals</h5>
+              <p class="card-text text-muted">Learn Agile, Scrum, and traditional PM frameworks to lead projects of any size successfully.</p>
+              <p class="small text-muted mb-1">Duration: 6 weeks | Level: Beginner</p>
+              <p class="fw-bold" style="color: var(--primary);">KES 9,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 course-card" data-category="data">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" class="card-img-top" alt="SQL and Database Design course thumbnail" />
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Data Science</span>
+              <h5 class="card-title">SQL & Database Design</h5>
+              <p class="card-text text-muted">Master relational databases, SQL queries, and schema design used in real production systems.</p>
+              <p class="small text-muted mb-1">Duration: 6 weeks | Level: Beginner</p>
+              <p class="fw-bold" style="color: var(--primary);">KES 8,000</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p id="noResults" class="text-center text-muted mt-5 d-none">No courses found in this category.</p>
+
     </div>
   </section>
 
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 mb-4"><h5>EduLearn</h5><p>Empowering students across Africa.</p></div>
-        <div class="col-md-4 mb-4"><h5>Quick Links</h5><a href="index.html">Home</a><a href="courses.html">Courses</a></div>
-        <div class="col-md-4 mb-4"><h5>Contact</h5><p>Email: info@edulearn.co.ke</p></div>
+        <div class="col-md-4 mb-4">
+          <h5>EduLearn</h5>
+          <p>Empowering students across Africa with quality online education.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Contact</h5>
+          <p>Email: info@edulearn.co.ke</p>
+          <p>Phone: +254 700 000 000</p>
+          <p>Location: Nairobi, Kenya</p>
+        </div>
       </div>
-      <div class="footer-bottom"><p>&copy; 2026 EduLearn. All rights reserved.</p></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 EduLearn. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
