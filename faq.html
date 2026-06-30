@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EduLearn - FAQ</title>
-  <meta name="description" content="Frequently asked questions about EduLearn courses, payments, and certificates." />
+  <meta name="description" content="Find answers to frequently asked questions about EduLearn courses, payments, and certificates." />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -36,7 +36,7 @@
   <div class="page-header">
     <div class="container">
       <h1>Frequently Asked Questions</h1>
-      <p>Everything you need to know about learning with EduLearn</p>
+      <p>Everything you need to know about EduLearn</p>
     </div>
   </div>
 
@@ -45,18 +45,19 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
 
-          <h4 class="mb-4 fw-bold" style="color: var(--primary);">Getting Started</h4>
-          <div class="accordion mb-5" id="faqGettingStarted">
+          <!-- COURSES -->
+          <h4 class="fw-bold mb-3" style="color: var(--primary);">Courses & Learning</h4>
+          <div class="accordion mb-5" id="accordionCourses">
 
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                  How do I create an EduLearn account?
+                  How do I enrol in a course?
                 </button>
               </h2>
-              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqGettingStarted">
-                <div class="accordion-body text-muted">
-                  Click the <strong>Get Started</strong> button on our homepage, fill in your name, email address, and a password, then verify your email. Your account will be active immediately and you can enrol in any course right away.
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionCourses">
+                <div class="accordion-body">
+                  Browse our <a href="courses.html">Courses page</a>, select the course you want, and click the enrol button. You will be prompted to create an account or log in, then proceed to payment. Once payment is confirmed, you get instant access to all course materials.
                 </div>
               </div>
             </div>
@@ -64,12 +65,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                  Do I need any prior experience to take a course?
+                  Are the courses self-paced or live?
                 </button>
               </h2>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqGettingStarted">
-                <div class="accordion-body text-muted">
-                  Most of our courses are designed for complete beginners. Each course page clearly states the prerequisites — if none are listed, you can start with zero experience. We recommend starting with our free introductory modules to see if the pace suits you.
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+                <div class="accordion-body">
+                  Most EduLearn courses are self-paced, meaning you can study at any time that suits you. Some advanced courses include optional live sessions with the instructor on weekends. Check the individual course page for specific scheduling details.
                 </div>
               </div>
             </div>
@@ -77,43 +78,44 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                  Can I access courses on my phone?
+                  How long do I have access to a course after enrolling?
                 </button>
               </h2>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqGettingStarted">
-                <div class="accordion-body text-muted">
-                  Yes. EduLearn is fully mobile-responsive. You can watch video lessons, complete quizzes, and track your progress from any smartphone or tablet. We also have a downloadable app available for Android devices.
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+                <div class="accordion-body">
+                  Once enrolled, you have lifetime access to the course materials. This means you can revisit lectures, download resources, and review assignments at any time, even after completing the course.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Do I need any prior knowledge to start?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+                <div class="accordion-body">
+                  It depends on the course level. All beginner-level courses assume no prior knowledge — just a computer and internet connection. Intermediate and advanced courses list their prerequisites clearly on the course page. We recommend reading those before enrolling.
                 </div>
               </div>
             </div>
 
           </div>
 
-          <h4 class="mb-4 fw-bold" style="color: var(--primary);">Payments & Pricing</h4>
-          <div class="accordion mb-5" id="faqPayments">
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                  What payment methods do you accept?
-                </button>
-              </h2>
-              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
-                <div class="accordion-body text-muted">
-                  We accept M-Pesa, Visa, Mastercard, and bank transfer. For M-Pesa payments, you'll receive a prompt directly to your phone after checkout. All transactions are secured with SSL encryption.
-                </div>
-              </div>
-            </div>
+          <!-- PAYMENTS -->
+          <h4 class="fw-bold mb-3" style="color: var(--primary);">Payments & Refunds</h4>
+          <div class="accordion mb-5" id="accordionPayments">
 
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                  Do you offer instalment payment plans?
+                  What payment methods do you accept?
                 </button>
               </h2>
-              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
-                <div class="accordion-body text-muted">
-                  Yes. For courses priced above KSh 5,000, you can split payment into two or three monthly instalments at no extra cost. Select the instalment option at checkout and follow the prompts to set it up.
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordionPayments">
+                <div class="accordion-body">
+                  We accept M-Pesa, Visa, Mastercard, and bank transfers. For M-Pesa payments, use our Paybill number 400200 and your email address as the account number. You will receive a confirmation email within 5 minutes of payment.
                 </div>
               </div>
             </div>
@@ -121,43 +123,44 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                  Is there a refund policy?
+                  Can I pay in instalments?
                 </button>
               </h2>
-              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
-                <div class="accordion-body text-muted">
-                  We offer a 7-day money-back guarantee. If you're not satisfied within 7 days of purchase and have completed less than 20% of the course, you can request a full refund by contacting our support team.
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#accordionPayments">
+                <div class="accordion-body">
+                  Yes. For courses priced above KES 10,000, we offer a two-instalment plan — 50% upfront and the remaining 50% within 30 days. Contact us at info@edulearn.co.ke to set up an instalment agreement before enrolling.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                  What is your refund policy?
+                </button>
+              </h2>
+              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#accordionPayments">
+                <div class="accordion-body">
+                  We offer a 7-day money-back guarantee on all courses. If you are not satisfied within the first 7 days of enrolment and have completed less than 20% of the course, you can request a full refund by emailing info@edulearn.co.ke with your order details.
                 </div>
               </div>
             </div>
 
           </div>
 
-          <h4 class="mb-4 fw-bold" style="color: var(--primary);">Certificates & Completion</h4>
-          <div class="accordion mb-5" id="faqCerts">
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
-                  Will I receive a certificate after completing a course?
-                </button>
-              </h2>
-              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqCerts">
-                <div class="accordion-body text-muted">
-                  Yes. Every learner who completes all lessons and passes the final assessment with a score of 70% or above receives a verifiable digital certificate. You can download it as a PDF and share it on LinkedIn or with employers.
-                </div>
-              </div>
-            </div>
+          <!-- CERTIFICATES -->
+          <h4 class="fw-bold mb-3" style="color: var(--primary);">Certificates & Results</h4>
+          <div class="accordion mb-5" id="accordionCerts">
 
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
-                  Are EduLearn certificates recognised by employers?
+                  Do I get a certificate after completing a course?
                 </button>
               </h2>
-              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqCerts">
-                <div class="accordion-body text-muted">
-                  Our certificates are increasingly recognised by tech companies and SMEs across East Africa. We are also working towards accreditation with TVETA (Technical and Vocational Education and Training Authority) in Kenya. Many of our graduates have successfully used their certificates in job applications.
+              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#accordionCerts">
+                <div class="accordion-body">
+                  Yes. Upon successful completion of all modules and the final assessment (minimum score of 70%), you will receive a digital certificate from EduLearn. You can download it as a PDF and share it directly to your LinkedIn profile.
                 </div>
               </div>
             </div>
@@ -165,22 +168,22 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
-                  What happens if I fail the final assessment?
+                  Are EduLearn certificates recognised by employers?
                 </button>
               </h2>
-              <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqCerts">
-                <div class="accordion-body text-muted">
-                  You can retake the final assessment up to three times at no extra cost. If you don't pass after three attempts, you can contact our support team to review your progress and get personalised feedback before trying again.
+              <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#accordionCerts">
+                <div class="accordion-body">
+                  Our certificates are recognised by a growing number of employers across Kenya and East Africa, particularly in the technology and digital marketing sectors. We are also working with university partners to offer credit recognition for selected courses.
                 </div>
               </div>
             </div>
 
           </div>
 
-          <div class="text-center mt-4 p-4 rounded" style="background: var(--card-bg); border: 1px solid var(--border);">
-            <h5 class="fw-bold mb-2">Still have questions?</h5>
-            <p class="text-muted mb-3">Our support team is happy to help you out.</p>
-            <a href="contact.html" class="btn btn-primary px-4">Contact Us</a>
+          <div class="text-center mt-4 p-4 rounded-3" style="background-color: #f0f4ff;">
+            <h5 class="fw-bold">Still have questions?</h5>
+            <p class="text-muted">Our support team is happy to help you.</p>
+            <a href="contact.html" class="btn-primary-custom">Contact Us</a>
           </div>
 
         </div>
